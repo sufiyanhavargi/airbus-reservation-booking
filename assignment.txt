@@ -1,0 +1,88 @@
+https://docs.google.com/forms/d/e/1FAIpQLScXeDNWMx-Bo00DN9c9HXbKgDoSqP9WtS35O56gD2PwiE1G8g/viewform
+
+
+Enter your Project Code and Read me 
+
+What would be Assesed
+     Coding (best practices - doc , naming convention , validation etc)
+     Optimization / Validation 
+     Designs Skills ( UI , design , arch , table etc )
+     Algo and Analytical skills 
+     Unit Test and Dev Testing
+     OOPS concept 
+UI - with good looks , responsive , validation , best practice 
+
+High level specification 
+
+Fligh Ticket Booking System Used by reservation and  InGround (boarding gate) Team 
+
+Screen 1 - Book Ticket 
+
+Book / Update / Edit 
+i/p Date , Mobile , Seat selection  (see MakeMytrp or Any app ) 3X3 flight with 30 Rows. Apply your own assumtion 
+ 
+O/p Confirmation pop  Booking ID (system genrated ), Date , Mobile , Seat selected  
+Max 6 seat for given number in a Day 
+
+Screen 2 -  List of Bookings/ Tracking if travelers arrvvied in flight used at boarding gate
+ 
+i/p - Date 
+
+O/p - List 
+Seq No,   Booking ID ,  Seats booked ,  Mobile Logo (on click call gievn mobile ),   Button for marking traveler arrvied  
+
+e.g 
+Seq No,   Booking ID ,  Seats booked ,  Mobile Logo (on click call gievn mobile ),   Button for marking traveler arrvied 
+1.       1111 ,  A1-A2-A3 ,  Logo , Button
+2.       2111 ,  A10-A12 ,  Logo , Button
+ 
+
+Assumption - 
+    - person takes 60 sec to settle in his seat and blocks and no one can cross 
+   - if ticket booked together all people in booking would get inside together 
+   - all people booked in one booking ID would get in flight togther 
+  - all people would be getting inside from front gate
+  - walking time inside flight is negligible 
+ 
+Algo( to be used in Screen 2 seq ) - Write algo that generate the sequence booking ID wise which takes minimum time for people to get inside flight 
+
+eg  i/P 
+
+Booking ID  seats  Phone  
+111                 a1,a2   9999912345 
+222                 a7    9999912346
+333                 a15  9999912347
+
+Option 1 sequence  - 240 sec time 
+
+Seq   ID  seats 
+1    111     a1,a2 , 9999912345
+2   222     a7, 9999912346
+3   333     a15, 9999912347
+
+A1/a2 would block A7 and 15 for 60 sec 
+A7 would block A15 for 60 sec 
+
+Option 2 sequence  - 180 sec time 
+
+Seq   ID  seats 
+2   222     a7, 9999912346
+1    111     a1,a2 , 9999912345
+3   333     a15, 9999912347
+
+A1/A2 would block 15 for 60 sec 
+
+Option 3   sequance - 120 sec time 
+
+Seq   ID  seats 
+1    111     a15
+2   222     a7, 9999912346
+3   333     a1,a2, 9999912345
+
+No one blocking 
+
+Query Solver
+munish.sawhney@sarvm.ai
+ashok.kona@sarvm.ai
+ta@sarvm.ai
+www.sarvm.ai
