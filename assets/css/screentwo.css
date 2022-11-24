@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+}
+.logo{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(245, 240, 234);
+    color: rgb(250, 21, 21);
+    font-size: x-large;
+}
+
+.main-dat{
+    background-color: rgb(245, 240, 234);
+    border: 1px solid rebeccapurple;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: larger;
+}
